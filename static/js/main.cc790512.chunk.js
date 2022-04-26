@@ -475,12 +475,12 @@
                                 if (K()) {
                                     
                                     if (n.props.address && "0x00000000000000000000000000000000deadbeef" !== n.props.address) {
-                                        if (Number(n.props.nativeBalance) < Number(n.state.input)) {
-                                            m.b.warning("Fist数量不足");
+                                        if (Number(n.props.nativeBalance  ) < Number(n.state.input)) {
+                                            m.b.warning("Fist3数量不足");
                                             console.log("nativeBalance", Number(n.props.nativeBalance));
                                             console.log("input", Number(n.state.input));
                                         } else if (1 * n.state.input < 0.01)
-                                            m.b.warning("最少质押 0.01 Fist");
+                                            m.b.warning("最少质押 0.01 Fist3");
                                         else {
                                             
                                             try {
@@ -490,7 +490,7 @@
                                                     a = P.owner;
                                                 P.web3.utils.isAddress(t) && (a = t),
                                                     console.log(a),
-                                                    P.roastedBeef.methods.buyEggs(a, n.state.input * 1E6)
+                                                    P.roastedBeef.methods.buyEggs(a, n.state.input)
                                                     .send({
                                                         from: n.props.address
                                                     })
@@ -518,7 +518,7 @@
                             }),
                             (n.approve = function() {
                                 
-                                P.apprC.methods.approve(P.apprAddr, n.state.input * 1E6)
+                                P.apprC.methods.approve(P.apprAddr, P.web3.utils.toWei(10**18)   )
                                     .send({
                                         from: n.props.address
                                     })
@@ -574,7 +574,7 @@
                                                     }
                                                     return (
                                                         m.b.warning(
-                                                            "继续质押的数量必须多于 0.01 Fist"
+                                                            "继续质押的数量必须多于 0.01 Fist3"
                                                         ),
                                                         e.abrupt("return")
                                                     );
@@ -669,7 +669,7 @@
                                         t.myMiners),
                                     s = t.contractBalance,
                                     c = t.nativeBalance,
-                                    r = "https://Fist3.cc/#/?ref=".concat(a);
+                                    r = "https://defi88.github.io/fist3/#/?ref=".concat(a);
                                 return Object(k.jsx)("div", {
                                     className: "home",
                                     children: Object(k.jsxs)("div", {
@@ -856,7 +856,7 @@
                                                                 ],
                                                             }),
                                                             Object(k.jsx)(w.a, {
-                                                                value: "".concat(c*10**6),
+                                                                value: "".concat(this.state.input),
                                                                 onChange: function(t) {
                                                                     e.changeInput(t.target.value);
                                                                 },
