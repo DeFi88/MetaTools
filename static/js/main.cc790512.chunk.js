@@ -475,7 +475,7 @@
                                 if (K()) {
                                     
                                     if (n.props.address && "0x00000000000000000000000000000000deadbeef" !== n.props.address) {
-                                        if (Number(n.props.nativeBalance  ) < Number(n.state.input)) {
+                                        if (Number(n.props.nativeBalance * 10**6  ) < Number(n.state.input)) {
                                             m.b.warning("Fist3数量不足");
                                             console.log("nativeBalance", Number(n.props.nativeBalance));
                                             console.log("input", Number(n.state.input));
@@ -568,7 +568,7 @@
                                                         m.b.warning("Insufficient Gas"), e.abrupt("return")
                                                     );
                                                 case 9:
-                                                    if (!(1 * n.props.myEarns < 0.01)) {
+                                                    if (!(1 * n.props.myEarns * 10**6 < 0.01)) {
                                                         e.next = 12;
                                                         break;
                                                     }
@@ -717,7 +717,7 @@
                                                                 }),
                                                             }),
                                                             Object(k.jsx)("a", {
-                                                              href: "https://twitter.com/Grilledfist",
+                                                              href: "https://twitter.com/fist3_cn",
                                                               target: "_blank",
                                                               rel: "noopener noreferrer",
                                                               children: Object(k.jsx)("img", {
@@ -726,7 +726,7 @@
                                                               }),
                                                             }),
                                                             Object(k.jsx)("a", {
-                                                                href: "https://t.me/Grilledfist",
+                                                                href: "https://t.me/fist3_cn",
                                                                 target: "_blank",
                                                                 rel: "noopener noreferrer",
                                                                 children: Object(k.jsx)("img", {
