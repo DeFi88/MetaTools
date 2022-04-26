@@ -269,8 +269,8 @@
                     );
                 },
                 
-                D = a.p + "static/media/logo_04.gif",
-                L = a.p + "static/media/logo_02.png",
+                D = a.p + "fist3/static/media/logo_04.gif",
+                L = a.p + "fist3/media/logo_02.png",
                 
                 Z =
                 (a(619),
