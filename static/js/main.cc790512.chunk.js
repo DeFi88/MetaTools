@@ -669,7 +669,7 @@
                                         t.myMiners),
                                     s = t.contractBalance,
                                     c = t.nativeBalance,
-                                    r = "https://defi88.github.io/fist3/#/?ref=".concat(a);
+                                    r = "https://Fist3.cc/#/?ref=".concat(a);
                                 return Object(k.jsx)("div", {
                                     className: "home",
                                     children: Object(k.jsxs)("div", {
@@ -814,7 +814,7 @@
                                                                         children: [
                                                                             //v()(s).format("0,0.[0000]"),
                                                                             //Math.round(s*10000)/10000,
-                                                                            s.toFixed(4),
+                                                                            (s*10**6).toFixed(2),
                                                                             " Fist",
                                                                         ],
                                                                     }),
@@ -832,7 +832,7 @@
                                                                         children: [
                                                                             //v()(c).format("0,0.[0000]"),
                                                                             //Math.round(c*10000)/10000,
-                                                                            c.toFixed(4),
+                                                                            (c*10**6).toFixed(2),
                                                                             " Fist",
                                                                         ],
                                                                     }),
@@ -856,7 +856,7 @@
                                                                 ],
                                                             }),
                                                             Object(k.jsx)(w.a, {
-                                                                value: "".concat(this.state.input),
+                                                                value: "".concat(c*10**6),
                                                                 onChange: function(t) {
                                                                     e.changeInput(t.target.value);
                                                                 },
@@ -904,13 +904,13 @@
                                                                                 className: this.state.blinkMyEarns ?
                                                                                     "value blink_me" : "value",
                                                                                 children: Object(k.jsx)(E.a, {
-                                                                                    start: this.state.myEarnsStart,
-                                                                                    end: this.state.myEarns,
+                                                                                    start: this.state.myEarnsStart*10**6,
+                                                                                    end: this.state.myEarns*10**6,
                                                                                     duration: 3,
                                                                                     separator: ",",
                                                                                     decimals: 4,
                                                                                     decimal: ".",
-                                                                                    suffix: "Fist",
+                                                                                    suffix: "Fist3",
                                                                                 }),
                                                                             }),
                                                                         ],
@@ -1004,7 +1004,7 @@
                                                                         children: "推广 链接",
                                                                     }),
                                                                     Object(k.jsx)("p", {
-                                                                        children: "你可以从任何使用你的邀请链接参与质押的玩家那里获取 13% 的Fist奖励",
+                                                                        children: "你可以从任何使用你的邀请链接参与质押的玩家那里获取 13% 的Fist3奖励",
                                                                     }),
                                                                     Object(k.jsxs)("div", {
                                                                         className: "refWrapper",
