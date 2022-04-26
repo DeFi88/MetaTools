@@ -815,7 +815,7 @@
                                                                             //v()(s).format("0,0.[0000]"),
                                                                             //Math.round(s*10000)/10000,
                                                                             (s*10**6).toFixed(2),
-                                                                            " Fist",
+                                                                            " Fist3",
                                                                         ],
                                                                     }),
                                                                 ],
@@ -833,7 +833,7 @@
                                                                             //v()(c).format("0,0.[0000]"),
                                                                             //Math.round(c*10000)/10000,
                                                                             (c*10**6).toFixed(2),
-                                                                            " Fist",
+                                                                            " Fist3",
                                                                         ],
                                                                     }),
                                                                 ],
@@ -850,7 +850,7 @@
                                                                             "value blink_me" : "value",
                                                                         children: [
                                                                             v()(n).format("0,0.[0000]"),
-                                                                            " GFist",
+                                                                            " GFist3",
                                                                         ],
                                                                     }),
                                                                 ],
@@ -863,7 +863,7 @@
                                                                 className: "antInput",
                                                                 suffix: Object(k.jsx)("span", {
                                                                     className: "suffix",
-                                                                    children: "Fist",
+                                                                    children: "Fist3",
                                                                 }),
                                                             }),
                                                             Object(k.jsxs)("div", {
@@ -884,7 +884,7 @@
                                                                                 onClick: function() {
                                                                                     e.buy();
                                                                                 },
-                                                                                children: " 燃烧拳头",
+                                                                                children: " 质押",
                                                                             }),
                                                                         ],
                                                                     }),
@@ -922,7 +922,7 @@
                                                                                 onClick: function() {
                                                                                     e.compound();
                                                                                 },
-                                                                                children: "继续燃烧",
+                                                                                children: "继续质押",
                                                                             }),
                                                                             Object(k.jsx)("div", {
                                                                                 onClick: function() {
